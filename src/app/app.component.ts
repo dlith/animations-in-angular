@@ -2,9 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'animations-in-angular';
+  list = ['Milk', 'Sugar', 'Bread'];
+
+    onAdd(item) {
+      this.list.push(item);
+    }
+
+    onDelete(item){
+
+    }
 }
